@@ -62,19 +62,23 @@ Install make,
 sudo apt update
 sudo apt install make
 ```
+Install gh (github)
+`sudo apt install gh`  
 
-## Preparation: 
-1. must use non-Windows machine. E.g. Mac or Linux, or wsl in windows using ubuntu.
-2. Install VS code in dev machine. Install these extensions: docker and devcontainer  
-3. After clone the repo, switch to branch "buildsgmap" first, and pull from github
-   ```
-   git checkout buildsgmap
-   git pull origin buildsgmap
-   ```
-4. Reopen VS code, as the repo has a .devcontainer set up, it should prompt for opening dev container
-   Accept it and now it's using a docker container to build map tiles.
+Set up github credential. You can try clone the repo.
+`gh repo clone yilumistudio/openmaptiles`  
+You will be asked for logins. Use token way as wsl ubuntu has no browser. 
+
+## Install docker on Windows (host)
+Install docker desktop on Windows if hasn't. This wsl ubuntu openmaptiles repo will use host docker for  
+making map tiles.
    
 # Build SG map
-In codespace or local dev container,  
+In codespace or local wsl ubuntu repo,  
 Run:  
-`./quickstart.sh singapore`
+```
+make
+./quickstart.sh singapore
+```
+
+# Don't delete containers and volumes created during make and ./quickstart.sh
