@@ -37,12 +37,34 @@ Write these content  in wsl.conf
 [user]
 default=username
 ```
-Now, type "exit" to exit terminal. In windows start menu, type "ubuntu" to go to ubutun terminal.  
+Now, type "exit" to exit terminal. 
+
+## Go back to ubuntu terminal
+In windows start menu, type "ubuntu" to go to ubutun terminal.  
 It should use the new default user.  
 
+## Use vs code in wsl ubuntu
+You don't need to install vs code for linux. Instead, you can use windows VS code to connect to wsl ubuntu.
+### terminal way
+In ubuntu terminal, type  
+`code directory/to/open`  
+
+### windows way
+In windows vs code, click bottom left blue button, connect to wsl with distro, select ubuntu.  
+
+### 
+In either way, your vs code should display "WSL" at bottom left area, and you terminal should show the default  
+ubuntu user name. 
+
+## Other setups
+Install make,  
+```
+sudo apt update
+sudo apt install make
+```
 
 ## Preparation: 
-1. must use non-Windows machine. E.g. Mac or Linux
+1. must use non-Windows machine. E.g. Mac or Linux, or wsl in windows using ubuntu.
 2. Install VS code in dev machine. Install these extensions: docker and devcontainer  
 3. After clone the repo, switch to branch "buildsgmap" first, and pull from github
    ```
