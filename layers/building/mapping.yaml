@@ -51,6 +51,9 @@ tables:
     - name: min_level
       key: min_level
       type: string
+    - name: residential
+      key: residential
+      type: string
     mapping:
       building:part:
       - __any__
@@ -148,6 +151,9 @@ tables:
       type: string
     - name: relmin_level
       key: min_level
+      type: string
+    - name: residential
+      key: residential
       type: string
     - name: member
       type: member_id
