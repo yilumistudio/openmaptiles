@@ -23,6 +23,8 @@ layer:
         [Yilumi] If True, building has this tag: residential:HDB.
     model3d: |
         [Yilumi] Has these values: batched.
+    debug_info: |
+        [Yilumi] Debug info.
 schema:
   - ./update_building.sql
   - ./building.sql
