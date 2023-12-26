@@ -21,6 +21,8 @@ layer:
         If True, building (part) should not be rendered in 3D. Currently, [building outlines](https://wiki.openstreetmap.org/wiki/Simple_3D_buildings) are marked as hide_3d.
     is_HDB: |
         [Yilumi] If True, building has this tag: residential:HDB.
+    model3d: |
+        [Yilumi] Has these values: batched.
 schema:
   - ./update_building.sql
   - ./building.sql

@@ -54,6 +54,9 @@ tables:
     - name: residential
       key: residential
       type: string
+    - name: model3d
+      key: model3d
+      type: string
     mapping:
       building:part:
       - __any__
@@ -154,6 +157,9 @@ tables:
       type: string
     - name: residential
       key: residential
+      type: string
+    - name: model3d
+      key: model3d
       type: string
     - name: member
       type: member_id
