@@ -19,8 +19,8 @@ layer:
         Colour
     hide_3d: |
         If True, building (part) should not be rendered in 3D. Currently, [building outlines](https://wiki.openstreetmap.org/wiki/Simple_3D_buildings) are marked as hide_3d.
-    is_HDB: |
-        [Yilumi] If True, building has this tag: residential:HDB.
+    hdb: |
+        [Yilumi] hdb related info, e.g."17,2018,Y,N,N,N,N,N,HG". They are: "hdb_max_floor_lvl, hdb_year_completed, hdb_residential, hdb_commercial, hdb_market_hawker, hdb_miscellaneous, hdb_multistorey_carpark, hdb_precinct_pavilion, hdb_bldg_contract_town".
     model3d: |
         [Yilumi] Has these values: batched.
     debug_info: |

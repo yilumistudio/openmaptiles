@@ -57,6 +57,9 @@ tables:
     - name: model3d
       key: model3d
       type: string
+    - name: hdb
+      key: hdb
+      type: string
     mapping:
       building:part:
       - __any__
@@ -160,6 +163,9 @@ tables:
       type: string
     - name: model3d
       key: model3d
+      type: string
+    - name: hdb
+      key: hdb
       type: string
     - name: member
       type: member_id
